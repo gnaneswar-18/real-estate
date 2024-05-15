@@ -1,0 +1,92 @@
+/* .container{
+  display: flex;
+   align-items: center;
+  justify-content: center;
+} */
+.login-form {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px;
+  height: 450px;
+  width: 340px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 25px;
+  margin: 15px;
+}
+
+.icon {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.inp {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 5px;
+}
+input {
+  font-size: 15px;
+  height: 40px;
+  width: 70%;
+  border: none;
+  outline: none !important;
+}
+.opt {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 15px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#rem {
+  margin: 10px;
+  height: 15px;
+  width: 15px;
+}
+
+#forget {
+  margin: 10px;
+}
+hr{
+  width: 70%;
+  text-align: center;
+}
+#log {
+  border: none;
+  border-radius: 7px;
+  color: white;
+  background-color: black;
+  width: 90%;
+  margin: 10px;
+}
+.link-btn{
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin: 10px 30px;
+}
+#g-log {
+  width: 90%;
+  background-color: white;
+}
+#acc-text{
+  font-size: 15px;
+}
+.text{
+  margin: -100;
+}
+
