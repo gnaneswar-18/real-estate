@@ -9,7 +9,7 @@
     height: 400px;
     width: 100%;
 }
-.text{
+.slide-text{
     padding: 100px;
     color: rgb(45, 45, 45);
     display: flex;
@@ -24,10 +24,11 @@ span{
     font-size: 15px;
     margin-left: -2px;
 }
-button{
+.slide-btn{
     border: none;
     background-color: orange;
     border-radius: 4px;
+    font-size: 14px;
     height: 30px;
     width: 110px;
 }

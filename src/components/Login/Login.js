@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Login.css';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-// import Axios from 'axios';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -14,7 +13,6 @@ const Login = () => {
         setType(prevType => (prevType === 'password' ? 'text' : 'password'));
         setIsVisbile(!isVisible);
     };
-
     const [formData, setFormData] = useState({});
 
     const handleInputChange = (e) => {
@@ -25,18 +23,13 @@ const Login = () => {
     };
 
     const handleSubmit = async (e) => {
-        // Axios.post(`http://localhost:3000/api/login`,
-        //         { formData }
-        //     )
-        //     .then((res) => {
-        //         console.log(res);
-        //         console.log(res.data);
-        //     });
-        navigate('/');
+        const username = 'Coder';
+        document.cookie = `username=${username}; max-age=60; path=/`;
+            navigate('/');
     };
 
     return (
-        <div className="container">
+        <div className="login-container">
             <div className="login-form">
                 <div className="head">
                     <p><b>Log In</b></p>
@@ -58,14 +51,10 @@ const Login = () => {
                     </div>
                     <Link to="/resetpassword" id="forget"><b>Forget Password</b></Link>
                 </div>
-                <div className="submit">
+                <div className="login-submit">
                     <input onClick={handleSubmit} type="button" name="log-in" id="log" value="Log in" />
                 </div>
-                <hr />
-                <div className="link-btn">
-                    <input type="button" name="email" id="g-log" value="Log In With google" />
-                </div>
-                <div className="text">
+                <div className="login-text">
                     <p id='acc-text'>Don't have an account?</p>
                     <Link to="/signup"><b>Create Account</b></Link>
                 </div>

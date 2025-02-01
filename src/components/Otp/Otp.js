@@ -8,7 +8,7 @@ const Otp = () => {
         navigate('/login')
     }
     return (
-        <div className='container'>
+        <div className='otp-container'>
             <div className="otp-form">
                 <div className="head">
                     <p><b>Enter otp</b></p>
@@ -24,12 +24,7 @@ const Otp = () => {
                 <div className="submit">
                     <input onClick={handleClick} type="button" name="log-in" id="log" value="Confirm" />
                 </div>
-                <hr />
-                <div className="acc-inp">
-                    <input type="button" name="email" id="g-log" value="Create account With google" />
-                </div>
-             
-                <div className="text">
+                <div className="otp-text">
                     Remember the password?
                     <Link to="/login"><b>Log in</b></Link>
                 </div>

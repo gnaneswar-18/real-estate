@@ -5,7 +5,7 @@ import Searchcard from '../Searchcard/Searchcard.js';
 import './Searchpage.css';
 
 const Searchpage = () => {
-    const coordinates = [28.6139, 77.2088];
+    const coordinates = [17.4065, 78.4772];
     const [searchValue, setSearchValue] = useState('');
     const [data, setData] = useState(houses);
 

@@ -6,7 +6,6 @@ const Search = () => {
     <div>
       <Navbar></Navbar>
       <Searchpage/>
-
     </div>
   )
 }

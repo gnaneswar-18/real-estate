@@ -10,6 +10,7 @@ import Imagepage from './components/Imagepage/Imagepage.js';
 import Search from './pages/Search.js'
 import Profile from './components/Profile/Profile.js';
 import Post from './components/Post/Post.js';
+import Contact from './pages/Contact.js';
 function App() {
   return (
     <>
@@ -25,7 +26,8 @@ function App() {
           <Route path='/search/:id/images' element={<Imagepage/>} />
           <Route path='/search' element={<Search/>} />
           <Route path='/profile' element={<Profile/>} />
-          <Route path='/post' element={<Post/>} />
+          <Route path='/contact' element={<Contact></Contact>}></Route>
+          <Route path='/profile/post' element={<Post/>} />
 
         </Routes>
       </BrowserRouter> 

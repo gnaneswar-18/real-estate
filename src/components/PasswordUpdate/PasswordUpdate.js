@@ -14,10 +14,10 @@ const PasswordUpdate = () => {
     setIsVisbile(!isVisible)
   };
   return (
-    <div className='container'>
+    <div className='pass-update-container'>
       <div className="pu-form">
         <div className="head">
-          <p><b>Log In</b></p>
+          <p><b>PassWordUpdate</b></p>
           <p><i class="fa-regular fa-circle-xmark icon"></i></p>
         </div>
         <p id="sub">Enter new password</p>
@@ -33,8 +33,7 @@ const PasswordUpdate = () => {
         <div className="submit">
           <input type="button" name="log-in" id="log" value="Update Password" />
         </div>
-        <hr />
-        <div className="text">
+        <div className="pass-update-text">
           Remember the password?
           <Link to="/login"><b>Log in</b></Link>
         </div>

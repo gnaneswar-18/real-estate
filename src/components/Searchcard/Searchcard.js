@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../Lists/home.jpg';
+import img from '../../images/home.jpg';
 import './Searchcard.css'
 import { useNavigate } from 'react-router-dom';
 export default function Searchcard(props) {

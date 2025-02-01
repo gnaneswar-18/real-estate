@@ -16,9 +16,12 @@ const Signup = () => {
         setIsVisbile(!isVisible)
     };
     const handlesubmit=()=>{
-        navigate('/')}
+        const username = 'Coder';
+        document.cookie = `username=${username}; max-age=60; path=/`;
+        navigate('/')
+    }
     return (
-        <div className="container">
+        <div className="signup-container">
             <div className="signup-form">
                 <div className="head">
                     <p><b>Create Account</b></p>
@@ -40,7 +43,7 @@ const Signup = () => {
                     </div>
                     <div className="inp">
                         <i className="fa-solid fa-lock icon "></i>
-                        <input type="password" name="password" id="pass-word" placeholder='Confirm password' />
+                        <input type="password" name="password" id="password" placeholder='Confirm password' />
                     </div>
                     <div className="opt">
                         <input type="checkbox" name="remember" id="agree" value="remember" />
@@ -49,10 +52,7 @@ const Signup = () => {
                     <div className="submit">
                         <input onClick={handlesubmit}type="button" name="sign-up" id="sign" value="Create Account" />
                     </div>
-                    <div className="acc-btn ">
-                        <input type="button" name="email" id="g-log" value="Create account With google" />
-                    </div>
-                    <div className="text">
+                    <div className="signup-text">
                         Have an account?
                         <Link to="/login"><b>Log in</b></Link>
                     </div>

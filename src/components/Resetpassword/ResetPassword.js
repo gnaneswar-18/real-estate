@@ -9,7 +9,7 @@ const ResetPassword = () => {
     navigate("/Otp");
   };
     return (
-        <div className='container'>
+        <div className='pass-set-container'>
             <div className="rp-form">
                 <div className="head">
                     <p><b>Reset passsword</b></p>
@@ -25,10 +25,6 @@ const ResetPassword = () => {
                 <div className="submit">
                     <input onClick={handleClick} type="button" name="up-pass" id="log" value="Get OTP" />
                 </div>
-                <div className="acc-inp">
-                    <input type="button" name="email" id="g-log" value="return to sign in" />
-                </div>
-                <hr  className='break-line'/>
                 <div className="text-size">
                     Don't have an account?
                     <Link to="/signup"><b>Create Account</b></Link>

@@ -1,12 +1,13 @@
 import React,{useState} from 'react'
 import './Post.css';
 import Navbar from '../Navbar/Navbar.js'
-const post = () => {
+const Post = () => {
   const [selectedFiles, setSelectedFiles] = useState([]);
 
   const handleFileChange = (event) => {
-    const file = event.target.files;
-    setSelectedFiles([...selectedFiles, file]);
+    const files = event.target.files;
+    const fileList = Array.from(files);
+    setSelectedFiles([...selectedFiles, ...fileList]);
   };
 
   return (
@@ -44,11 +45,11 @@ const post = () => {
             <p className='right-heading'><b>images:</b>(max 6)</p>
             <div className="file">
               <div>
-                <input type="file" id="post-file" multiple />
+                <input type="file" id="post-file" multiple onClick={handleFileChange} />
                 <label htmlFor="post-file"></label>
               </div>
               <div>
-                <button id='up-btn' onClick={handleFileChange}>Upload</button>
+                <button id='up-btn' >Upload</button>
               </div>
             </div>
             <div>
@@ -57,14 +58,13 @@ const post = () => {
                   <p>Selected files:</p>
                   <ul>
                     {selectedFiles.map((file, index) => (
-                      <li key={index}>{file.name}</li>
+                      <li key={index}>{file && file.name}</li>
                     ))}
                   </ul>
                 </div>
               )}
             </div>
-
-
+            <button className='post-btn'>Upload post</button>
           </div>
         </div>
       </div>
@@ -72,4 +72,4 @@ const post = () => {
   )
 }
 
-export default post
+export default Post

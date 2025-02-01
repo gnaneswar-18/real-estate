@@ -59,6 +59,16 @@ input[type='file'] {
     padding-top:6px;
 }
 #up-btn{
-    padding: auto;
+    border-radius: 4px;
+    padding: 10px;
+    border-color: green;
+    background-color: rgb(227, 244, 227);
     margin: 0;
+}
+.post-btn{
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-weight: 700;
 }

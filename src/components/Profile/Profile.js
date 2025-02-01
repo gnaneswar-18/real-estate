@@ -19,10 +19,13 @@ const Profile = () => {
   const handleUpdateClick = () => {
     setdisable(!disable);
   };
-
+  const handleLogout = () => {
+    document.cookie = 'username=; max-age=0; path=/';
+  };
   const handleclick = () => {
     navigate('./post');
   };
+
 
   return (
     <>
@@ -54,10 +57,7 @@ const Profile = () => {
             e.preventDefault()
             navigate('/signup')
           }}>Delete Account</a>
-          <a href="/" className='pro-link' onClick={(e) => {
-            e.preventDefault()
-            navigate('/')
-          }}>Sign Out</a>
+          <a href="/" className='pro-link' onClick={handleLogout} >Sign Out</a>
         </div>
         <div>
           <a href="/" className='pro-list' onClick={handleshowclick}> {showComponent ? "Hide Listing" : "Show Listing"}</a>

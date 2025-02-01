@@ -1,6 +1,6 @@
 const houses = [
   {
-    id: 0,
+    id: 1,
     title: "Modern Beach House",
     description: "Stunning beachfront property with panoramic ocean views.",
     beds: 4,
@@ -14,7 +14,7 @@ const houses = [
     longitude: 78.4867
   },
   {
-    id: 1,
+    id: 2,
     title: "Cozy Mountain Cabin",
     description: "Charming cabin nestled in the woods with a fireplace and hot tub.",
     beds: 2,
@@ -28,7 +28,7 @@ const houses = [
     longitude: 78.4983
   },
   {
-    id: 2,
+    id: 3,
     title: "Luxury City Penthouse",
     description: "Sleek and spacious penthouse apartment in the heart of the city.",
     beds: 3,
@@ -42,7 +42,7 @@ const houses = [
     longitude: 78.4784
   },
   {
-    id: 3,
+    id: 4,
     title: "Rustic Farmhouse Retreat",
     description: "Quaint farmhouse surrounded by fields and rolling hills.",
     beds: 3,
@@ -55,20 +55,7 @@ const houses = [
     latitude: 12.9716,
     longitude: 77.5946
   },
-  {
-    id: 4,
-    title: "Lakefront Cottage",
-    description: "Cozy cottage overlooking a peaceful lake, perfect for fishing and relaxation.",
-    beds: 1,
-    bathrooms: 1,
-    rate: 150,
-    discount: 5,
-    area: 4300,
-    location: "Bangalore",
-    added: "June 18, 2022",
-    latitude: 12.9717,
-    longitude: 77.5950
-  },
+  
   {
     id: 5,
     title: "Urban Loft with Skyline View",
@@ -166,6 +153,20 @@ const houses = [
     added: "June 18, 2022",
     latitude: 13.0826,
     longitude: 80.2705
+  },
+  {
+    id: 12,
+    title: "Lakefront Cottage",
+    description: "Cozy cottage overlooking a peaceful lake, perfect for fishing and relaxation.",
+    beds: 1,
+    bathrooms: 1,
+    rate: 150,
+    discount: 5,
+    area: 4300,
+    location: "Bangalore",
+    added: "June 18, 2022",
+    latitude: 12.9717,
+    longitude: 77.5950
   }
 ];
 
